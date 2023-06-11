@@ -1,0 +1,119 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    font-family: 'Dosis', sans-serif;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper{
+
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    width: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+@media screen and (max-width: 990px) {
+    .wrapper{
+        width: 300px;
+        padding: 10px 17px;
+        height: 500px;
+    }
+}
+
+.screen{
+
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color:#232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+@media screen and (max-width: 990px) {
+    .screen{
+        width: 266px;
+        font-size: 22px;
+    }
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+.calc-button{
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color:#232323;
+    width:20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+    transition: 0.15s ease-in;
+}
+
+.calc-button:last-child{
+    background: #d72880;
+    color: #fff;
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+@media screen and (max-width:990px){
+    .calc-button:last-child:hover{
+        background-color: #d72880;
+        color:#fff;
+    }
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+@media screen and (max-width:990px){
+    .calc-button:hover{
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+}
+
+.calc-button:active{
+    background-color: #ffef78;
+}
+
+.calc-button:last-child:active{
+    background-color: rgba(255, 255, 255, 0.75);
+    color:#d72880;
+}
+
+.double{
+    width: 47%;
+}
+.triple{
+    width: 73%
+}
